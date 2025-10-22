@@ -11,6 +11,22 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      const sections = menuItems.map((item) =>
+        document.getElementById(item.id)
+      );
+      const scrollPos = window.scrollY + 200;
+
+      for (let section of sections) {
+        if (
+          section &&
+          section.offsetTop <= scrollPos &&
+          section.offsetTop + section.offsetHeight > scrollPos
+        ) {
+          setActive(section.id);
+          break;
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,8 +53,8 @@ const Navbar = () => {
       }`}
     >
       <div className="text-[#111111] py-5 flex justify-between items-center">
-        <div className="text-xl font-semibold cursor-pointer">
-          <span className="text-[#8245ec]">&lt;</span>
+        <div className="text-2xl font-semibold cursor-pointer">
+          <span className="text-[#8245ec] animate-spin">&lt;</span>
           <span className="text-[#111111]">Nitin</span>
           <span className="text-[#8245ec]">/</span>
           <span className="text-[#111111]">Lobhiyal</span>

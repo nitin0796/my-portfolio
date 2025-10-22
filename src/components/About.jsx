@@ -1,8 +1,7 @@
-import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
 import profileImage from "../assets/Profile.jpg";
-import RotatingText from "./RotatingText";
-// import TextLoop from "./TextLoop";
+import BlurText from "./BlurText";
+import TextType from "./TextType";
 
 const About = () => {
   return (
@@ -29,35 +28,35 @@ const About = () => {
           </Tilt>
         </div>
         <div className="md:w-1/2 justify-center text-center md:text-left mt-8 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#111111] mb-2  leading-tight">
-            Hi, I am
-          </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#111111] mb-4 leading-tight">
-            Nitin Lobhiyal
-          </h2>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight text-center md:text-left flex justify-center items-center md:justify-start ">
-            <span className="text-[#111111]">I am a &nbsp;</span>
-            <span className="text-[#8245EC]">
-              <RotatingText
-                texts={[
-                  "Fullstack Developer",
-                  "Frontend Developer",
-                  "Backend Developer",
-                  "Coder",
-                ]}
-                mainClassName="px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-3 bg-[#8245ec]/90 backdrop-blur-sm text-white font-semibold rounded-2xl font-medium shadow-xl"
-                staggerFrom={"last"}
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
-                staggerDuration={0.025}
-                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={3000}
-              />
+          <BlurText
+            text={"Hi, I am\nNitin Lobhiyal"}
+            delay={150}
+            animateBy="letters"
+            direction="top"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#111111] mb-4 leading-tight"
+          />
+
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight text-center md:text-left flex justify-center md:justify-start ">
+            <span className="text-[#111111]">
+              I am a &nbsp;
+              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#8245ec] leading-tight">
+                <TextType
+                  text={[
+                    "Fullstack Developer",
+                    "Frontend Developer",
+                    "Backend Developer",
+                    "Coder",
+                  ]}
+                  typingSpeed={150}
+                  pauseDuration={1500}
+                  showCursor={false}
+                  cursorCharacter="_"
+                  textColors={["#8245ec"]}
+                />
+              </span>
             </span>
           </h3>
-          <p className="text-base sm:text-lg md:text-lg text-[#6B7280] mb-10 mt-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-lg text-[#6B7280] mb-10 leading-relaxed">
             I'm a developer who turns ideas into user-friendly web apps using
             the MERN stack. I build clean, scalable solutions with a focus on
             readable code and intuitive design. Always curious, I explore new
