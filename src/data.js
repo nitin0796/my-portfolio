@@ -28,7 +28,7 @@ import jetKingLogo from "./assets/education_logo/jetking.png";
 
 // Project Section Logo's
 import movraxLogo from "./assets/project_logo/Movrax.png";
-
+import quoteGeneratorLogo from "./assets/project_logo/Quote_gentrator.png";
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -118,5 +118,15 @@ export const projects = [
     ],
     github: "https://github.com/nitin0796/Movarx",
     webapp: "https://movarx.vercel.app",
+  },
+  {
+    id: 1,
+    title: "Quote Generator",
+    description:
+      "A Quote Generator is a simple web app built with HTML, CSS, and JavaScript that fetches quotes from an API and displays them randomly. It also allows users to share their favorite quotes directly to their X (Twitter) profile.",
+    image: quoteGeneratorLogo,
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/nitin0796/Quote-Generator",
+    webapp: "https://xquotegenrator.netlify.app/",
   },
 ];
