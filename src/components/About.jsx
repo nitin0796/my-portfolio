@@ -1,5 +1,5 @@
 import Tilt from "react-parallax-tilt";
-import profileImage from "../assets/Profile.jpg";
+import profileImage from "../assets/Profile.png";
 import BlurText from "./BlurText";
 import TextType from "./TextType";
 
@@ -23,7 +23,7 @@ const About = () => {
             <img
               src={profileImage}
               alt="profile image"
-              className="w-full h-full rounded-full object-cover drop-shadow-2xl"
+              className="w-full h-full rounded-full object-cover drop-shadow-2xl "
             />
           </Tilt>
         </div>

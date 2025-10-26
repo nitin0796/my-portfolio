@@ -5,9 +5,7 @@ import javascriptLogo from "./assets/tech_logo/javascript.png";
 import pythonLogo from "./assets/tech_logo/python.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
-import nextjsLogo from "./assets/tech_logo/nextjs.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
-import gsapLogo from "./assets/tech_logo/gsap.png";
 import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
 import nodejsLogo from "./assets/tech_logo/nodejs.png";
 import expressjsLogo from "./assets/tech_logo/express.png";
@@ -15,7 +13,6 @@ import mongodbLogo from "./assets/tech_logo/mongodb.png";
 import firebaseLogo from "./assets/tech_logo/firebase.png";
 import gitLogo from "./assets/tech_logo/git.png";
 import githubLogo from "./assets/tech_logo/github.png";
-import vscodeLogo from "./assets/tech_logo/vscode.png";
 import postmanLogo from "./assets/tech_logo/postman.png";
 import mcLogo from "./assets/tech_logo/mc.png";
 import netlifyLogo from "./assets/tech_logo/netlify.png";
@@ -38,9 +35,7 @@ export const SkillsInfo = [
       { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
       { name: "Redux", logo: reduxLogo },
-      { name: "Next JS", logo: nextjsLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
-      { name: "GSAP", logo: gsapLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
     ],
   },
@@ -65,7 +60,6 @@ export const SkillsInfo = [
     skills: [
       { name: "Git", logo: gitLogo },
       { name: "GitHub", logo: githubLogo },
-      { name: "VS Code", logo: vscodeLogo },
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
       { name: "Vercel", logo: vercelLogo },
@@ -106,7 +100,7 @@ export const projects = [
     id: 0,
     title: "Movrax",
     description:
-      "MovraX is a modern movie and TV Series discovery platform built on React that lets you browse and search the latest films and entertainment content. Featuring debounced search functionality for smooth, responsive queries, MovraX provides an optimized experience for finding your next favorite movie.",
+      "MovraX is a modern movie and TV series discovery platform built with React, designed to help you explore and search the latest films and shows effortlessly. With debounced search for smooth, real-time results and an infinite scroll feature for seamless browsing, MovraX delivers an optimized and engaging experience for finding your next favorite watch.",
     image: movraxLogo,
     tags: [
       "React JS",

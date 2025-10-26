@@ -6,8 +6,6 @@ const Skills = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
-    // if (!isAutoPlaying) return;
-
     const interval = setInterval(() => {
       setActiveCategory((prev) => (prev + 1) % SkillsInfo.length);
     }, 4000);

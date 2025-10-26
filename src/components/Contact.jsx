@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
+import contact from "../assets/contact.png";
 
 const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID;
@@ -69,16 +70,24 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#111111] mb-4">
                 Let's Connect
               </h3>
+
               <p className="text-[#6B7280] leading-relaxed mb-8">
                 I'm always open to discussing new projects, creative ideas, or
                 opportunities to be part of your vision. Drop me a message and
                 let's start a conversation!
               </p>
+              <div className="sm:hidden md:hidden lg:block h-full w-full">
+                <img
+                  src={contact}
+                  alt="contact"
+                  className="object-cover object-center"
+                />
+              </div>
             </div>
           </div>
 
