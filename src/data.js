@@ -19,7 +19,6 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 
 // Education Section Logo's
-import masaiLogo from "./assets/education_logo/masai_logo.png";
 import manipalLogo from "./assets/education_logo/manipal_logo.png";
 import jetKingLogo from "./assets/education_logo/jetking.png";
 
@@ -71,14 +70,6 @@ export const SkillsInfo = [
 export const education = [
   {
     id: 0,
-    img: masaiLogo,
-    school: "Masai School",
-    date: "August 2024 - June 2025",
-    desc: "I have successfully completed an intensive, industry-focused MERN Stack Development program at Masai School, where I gained hands-on experience and deep expertise in building scalable, full-stack web applications using MongoDB, Express.js, React, and Node.js.",
-    degree: "Full Stack Developer - MERN",
-  },
-  {
-    id: 1,
     img: manipalLogo,
     school: "Manipal University Jaipur",
     date: "July 2022 - Dec 2024",
@@ -86,7 +77,7 @@ export const education = [
     degree: "Bachelor In Computer Applications - BCA",
   },
   {
-    id: 2,
+    id: 1,
     img: jetKingLogo,
     school: "Jetking, Delhi",
     date: "June 2019 - March 2021",
