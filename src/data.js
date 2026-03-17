@@ -25,6 +25,7 @@ import jetKingLogo from "./assets/education_logo/jetking.png";
 // Project Section Logo's
 import movraxLogo from "./assets/project_logo/Movrax.png";
 import quoteGeneratorLogo from "./assets/project_logo/Quote_gentrator.png";
+import resumeForgeLogo from "./assets/project_logo/Resume-Forge.png";
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -89,6 +90,28 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Resume Forge",
+    description:
+      "Resume Forge is a full-stack MERN application designed to help users create professional resumes with ease. Built using React.js, Node.js, Express, MongoDB, and Tailwind CSS, the platform offers a seamless and intuitive interface for entering personal details, work experience, and educational background. It integrates the Google Gemini AI model to enhance content generation and utilizes ImageKit for efficient image storage and management. The application focuses on delivering a smooth user experience while enabling users to generate polished, job-ready resumes quickly and efficiently.",
+    image: resumeForgeLogo,
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Axios",
+      "Redux Tool-Kit",
+      "Image-kit",
+      "MongoDB",
+      "JWT",
+      "Gemini AI",
+    ],
+    github: "https://github.com/nitin0796/AI-Resume-Builder",
+    webapp: "https://ai-resume-builder-frontend-17tb.onrender.com",
+  },
+  {
+    id: 1,
     title: "Movrax",
     description:
       "MovraX is a modern movie and TV series discovery platform built with React, designed to help you explore and search the latest films and shows effortlessly. With debounced search for smooth, real-time results and an infinite scroll feature for seamless browsing, MovraX delivers an optimized and engaging experience for finding your next favorite watch.",
@@ -105,7 +128,7 @@ export const projects = [
     webapp: "https://movarx.vercel.app",
   },
   {
-    id: 1,
+    id: 2,
     title: "Quote Generator",
     description:
       "A Quote Generator is a simple web app built with HTML, CSS, and JavaScript that fetches quotes from an API and displays them randomly. It also allows users to share their favorite quotes directly to their X (Twitter) profile.",
