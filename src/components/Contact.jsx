@@ -29,7 +29,7 @@ const Contact = () => {
             pauseOnHover: true,
             draggable: true,
             theme: "light",
-          }
+          },
         );
       },
       (err) => {
@@ -44,7 +44,7 @@ const Contact = () => {
           draggable: true,
           theme: "light",
         });
-      }
+      },
     );
   };
 
@@ -81,7 +81,7 @@ const Contact = () => {
                 opportunities to be part of your vision. Drop me a message and
                 let's start a conversation!
               </p>
-              <div className="sm:hidden md:hidden lg:block h-full w-full">
+              <div className="hidden lg:block h-full w-full">
                 <img
                   src={contact}
                   alt="contact"

@@ -1,4 +1,3 @@
-import Tilt from "react-parallax-tilt";
 import profileImage from "../assets/Profile.png";
 import BlurText from "./BlurText";
 import TextType from "./TextType";
@@ -11,21 +10,11 @@ const About = () => {
     >
       <div className="flex flex-col md:flex-row justify-around items-center">
         <div className="md:w-1/3 flex justify-center md:justify-end">
-          <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[20rem] md:h-[20rem] rounded-full shadow-md"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.1}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
-            <img
-              src={profileImage}
-              alt="profile image"
-              className="w-full h-full rounded-full object-cover drop-shadow-2xl "
-            />
-          </Tilt>
+          <img
+            src={profileImage}
+            alt="profile image"
+            className="w-full h-full rounded-full object-cover drop-shadow-2xl transition duration-300 transform hover:scale-105 shadow-sm hover:shadow-md"
+          />
         </div>
         <div className="md:w-1/2 justify-center text-center md:text-left mt-8 md:mt-0">
           <BlurText
