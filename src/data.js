@@ -26,6 +26,8 @@ import jetKingLogo from "./assets/education_logo/jetking.png";
 import movraxLogo from "./assets/project_logo/Movrax.png";
 import quoteGeneratorLogo from "./assets/project_logo/Quote_gentrator.png";
 import resumeForgeLogo from "./assets/project_logo/Resume-Forge.png";
+import dialo from "./assets/project_logo/Dialo.png";
+
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -90,6 +92,16 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Dialo",
+    description:
+      "Dialo is a modern watch marketplace platform where sellers can list and showcase their watches for potential buyers. The platform acts as a bridge between buyers and sellers by providing detailed watch listings along with seller contact information, enabling direct communication and seamless deal negotiation. Buyers can explore a variety of watches, connect with sellers, and purchase their preferred timepieces with ease. Built with Next.js, TypeScript, MongoDB, and Mongoose, Dialo delivers a fast, scalable, and responsive user experience with efficient data management and a robust full-stack architecture",
+    image: dialo,
+    tags: ["NextJS", "TypeScript", "MongoDB", "Mongoose"],
+    github: "https://github.com/nitin0796/dialo",
+    webapp: "https://dialo-kappa.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Resume Forge",
     description:
       "Resume Forge is a full-stack MERN application designed to help users create professional resumes with ease. Built using React.js, Node.js, Express, MongoDB, and Tailwind CSS, the platform offers a seamless and intuitive interface for entering personal details, work experience, and educational background. It integrates the Google Gemini AI model to enhance content generation and utilizes ImageKit for efficient image storage and management. The application focuses on delivering a smooth user experience while enabling users to generate polished, job-ready resumes quickly and efficiently.",
@@ -111,7 +123,7 @@ export const projects = [
     webapp: "https://ai-resume-builder-frontend-17tb.onrender.com",
   },
   {
-    id: 1,
+    id: 2,
     title: "Movrax",
     description:
       "MovraX is a modern movie and TV series discovery platform built with React, designed to help you explore and search the latest films and shows effortlessly. With debounced search for smooth, real-time results and an infinite scroll feature for seamless browsing, MovraX delivers an optimized and engaging experience for finding your next favorite watch.",
@@ -128,7 +140,7 @@ export const projects = [
     webapp: "https://movarx.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Quote Generator",
     description:
       "A Quote Generator is a simple web app built with HTML, CSS, and JavaScript that fetches quotes from an API and displays them randomly. It also allows users to share their favorite quotes directly to their X (Twitter) profile.",
